@@ -17,6 +17,7 @@ def browser_setup():
     driver.maximize_window()
     driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 
+
     yield driver
    # driver.quit()
 
@@ -37,3 +38,6 @@ def test_login_credentials(browser_setup):
         time.sleep(4)
         assert driver.find_element(By.XPATH,"//span[text()='Dashboard']").is_displayed()
         assert driver.find_element(By.XPATH, "//span[text()='Dashboard']").text == "Dashboard"
+
+def demo():
+    print("github demo")
