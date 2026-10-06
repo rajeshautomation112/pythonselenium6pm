@@ -39,5 +39,3 @@ def test_login_credentials(browser_setup):
         assert driver.find_element(By.XPATH,"//span[text()='Dashboard']").is_displayed()
         assert driver.find_element(By.XPATH, "//span[text()='Dashboard']").text == "Dashboard"
 
-def demo():
-    print("github demo")
